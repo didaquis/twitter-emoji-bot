@@ -1,0 +1,33 @@
+{
+  "name": "twitter-emoji-bot",
+  "version": "1.0.1",
+  "description": "twitter-emoji-bot",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node .",
+    "test": "mocha test",
+    "test:coverage": "nyc mocha test"
+  },
+  "keywords": [
+    "twitter",
+    "emoji",
+    "bot"
+  ],
+  "author": "Dídac García",
+  "license": "ISC",
+  "dependencies": {
+    "cron": "^1.3.0",
+    "dotenv": "^5.0.1",
+    "imageurl-base64": "^1.0.0",
+    "node-fetch": "^2.1.2",
+    "twitter": "^1.7.1"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^5.1.1",
+    "nyc": "^11.7.1"
+  },
+  "engines": {
+    "node": "9.4.0"
+  }
+}
