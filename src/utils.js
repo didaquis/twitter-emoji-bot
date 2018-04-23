@@ -4,13 +4,17 @@
  * @returns {Array} - The source array shuffled
  */
 function shuffleArray(array) {
-	let counter = array.length;
-	while (counter > 0) {
-		let index = Math.floor(Math.random() * counter);
-		counter--;
-		let temp = array[counter];
-		array[counter] = array[index];
-		array[index] = temp;
+	let totalIndex = array.length;
+
+	while (totalIndex > 0) {
+		const randomIndex = Math.floor(Math.random() * totalIndex);
+	
+		totalIndex--;
+
+		const temp = array[totalIndex];
+
+		array[totalIndex] = array[randomIndex];
+		array[randomIndex] = temp;
 	}
 	return array;
 }

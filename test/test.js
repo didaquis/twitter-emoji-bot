@@ -1,5 +1,10 @@
+import { GitHubApi } from '../src/api';
+
 require('dotenv').config();
-const github_Api = require('../src/GitHubApi');
+
+// const GitHubApi = require('../src/api');
+const github_Api = new GitHubApi();
+
 const shuffleArray = require('../src/utils');
 const CronJob = require('cron').CronJob;
 const Twitter = require('twitter');

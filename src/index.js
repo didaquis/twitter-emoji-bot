@@ -1,11 +1,14 @@
+// ES6
+import GitHubApi from "./api";
+
+// const github_Api = require('./GitHubApi');
+const github_Api = new GitHubAPI();
+
 require('dotenv').config();
 const CronJob = require('cron').CronJob;
 const Twitter = require('twitter');
-const github_Api = require('./GitHubApi');
 const shuffleArray = require('./utils');
-
 const i2b = require('imageurl-base64');
-
 const client = new Twitter({
 	consumer_key: process.env.TWITTER_CONSUMER_KEY,
 	consumer_secret: process.env.TWITTER_CONSUMER_SECRET,
@@ -18,14 +21,13 @@ const client = new Twitter({
  */
 let emojiList = [];
 
-
 /**
  * Cron task schedule
+ * Example: 
+ * '00 00 10-23 * * *' (every hour from 10AM to 23PM)
+ * '00 00,20,40 * * * *' (every hour on minute 00, 20 and 40)
  */
 new CronJob('00 00,20,40 * * * *', () => {
-	// Example: '00 00 10-23 * * *' (every hour from 10AM to 23PM)
-	// Example: '00 00,20,40 * * * *' (every hour on minute 00, 20 and 40)
-
 	// task to execute:
 	if (emojiList.length === 0) {
 		/**
