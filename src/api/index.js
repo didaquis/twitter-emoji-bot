@@ -1,5 +1,4 @@
-import FetchApi from "./FetchApi";
-import GitHubApi from "./GitHubApi";
+const FetchApi = require( "./FetchApi");
+const GitHubApi = require( "./GitHubApi");
 
-export default GitHubApi;
-export  { FetchApi };
+module.exports= { GitHubApi, FetchApi };

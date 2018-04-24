@@ -1,8 +1,7 @@
-import { GitHubApi } from '../src/api';
-
 require('dotenv').config();
 
 // const GitHubApi = require('../src/api');
+const { GitHubApi } = require('../src/api');
 const github_Api = new GitHubApi();
 
 const shuffleArray = require('../src/utils');

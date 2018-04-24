@@ -1,6 +1,9 @@
-import FetchApi from "./FetchApi";
+const  FetchApi = require("./FetchApi");
 
-export default class GitHubApi extends FetchApi {
+module.exports = class GitHubApi extends FetchApi {
+	constructor(url) {
+		super(url)
+	}
 	/**
 	 * Retrieve emojis
 	 * @returns {Promise<Response>} Data received from endpoint
