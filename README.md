@@ -15,6 +15,9 @@ Example: [@_emoji_bot_](https://twitter.com/_emoji_bot_)
 * Download repo
 * Install dependencies `npm install`
 * You must configure the authentication data of Twitter.
- * Write your credentials in file `_env`
- * Rename the file `_env` to `.env`
+  * Write your credentials in file `_env`
+  * Rename the file `_env` to `.env`
 * Execute script with `node .` or `npm start`
+
+## Suggestion
+You can deploy this code as a Node.js app on [Heroku](https://www.heroku.com/home)
