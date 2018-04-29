@@ -3,9 +3,10 @@ const CronJob = require('cron').CronJob;
 const Twitter = require('twitter');
 const shuffleArray = require('./utils');
 const i2b = require('imageurl-base64');
-// const github_Api = require('./GitHubApi');
+
 const { GitHubApi } = require("./api");
-const github_Api = new GitHubApi();
+const URL = "https://api.github.com/"
+const github_Api = new GitHubApi(URL);
 
 const client = new Twitter({
 	consumer_key: process.env.TWITTER_CONSUMER_KEY,

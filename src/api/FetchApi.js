@@ -1,8 +1,8 @@
 const fetch = require("node-fetch");
 
 module.exports = class FetchApi {
-    constructor(baseUrl) {
-        this.baseUrl = baseUrl ? baseUrl : "https://api.github.com/";
+    constructor(url) {
+        this.baseUrl = url;
     }
 
     getBaseUrl() {
@@ -10,7 +10,7 @@ module.exports = class FetchApi {
     }
 
     /**
-     * Make a request to GitHub public API
+     * Make a request to public API
      * @param {string} URL of endpoint
      * @returns {Promise<Response>} Data received from endpoint
      * @throws {string} If something go wrong

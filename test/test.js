@@ -1,8 +1,8 @@
 require('dotenv').config();
 
-// const GitHubApi = require('../src/api');
 const { GitHubApi } = require('../src/api');
-const github_Api = new GitHubApi();
+const URL = "https://api.github.com/"
+const github_Api = new GitHubApi(URL);
 
 const shuffleArray = require('../src/utils');
 const CronJob = require('cron').CronJob;
