@@ -1,6 +1,6 @@
 {
   "name": "twitter-emoji-bot",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "twitter-emoji-bot",
   "main": "src/index.js",
   "scripts": {
@@ -16,18 +16,18 @@
   "author": "Dídac García",
   "license": "ISC",
   "dependencies": {
-    "cron": "^1.3.0",
-    "dotenv": "^5.0.1",
+    "cron": "^1.8.2",
+    "dotenv": "^8.2.0",
     "imageurl-base64": "^1.0.0",
-    "node-fetch": "^2.1.2",
+    "node-fetch": "^2.6.0",
     "twitter": "^1.7.1"
   },
   "devDependencies": {
-    "chai": "^4.1.2",
-    "mocha": "^5.1.1",
-    "nyc": "^11.7.1"
+    "chai": "^4.2.0",
+    "mocha": "^8.0.1",
+    "nyc": "^15.1.0"
   },
   "engines": {
-    "node": "9.4.0"
+    "node": "12.18.0"
   }
 }
